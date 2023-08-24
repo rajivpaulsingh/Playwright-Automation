@@ -1,0 +1,19 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "description": "Automation using playwright",
+  "main": "index.js",
+  "scripts": {
+    "tests:chrome": "playwright test --config=playwright.config.ts --project=Chromium --reporter=html",
+    "tests:firefox": "playwright test --config=playwright.config.ts --project=Firefox --reporter=html",
+    "tests:webkit": "playwright test --config=playwright.config.ts --project=Webkit --reporter=html",
+    "tests:e2e": "playwright test --config=e2e.config.ts --project=Chromium --reporter=html",
+    "tests:api": "playwright test --config=api.config.ts --project=Chromium --reporter=list"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.37.1",
+    "prettier": "^3.0.2"
+  }
+}
